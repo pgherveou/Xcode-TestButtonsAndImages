@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestButtonsAndImages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="BKo-De-gUk" customClass="CircleImageView" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="110" y="35" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.010554053820669651" green="0.70540529489517212" blue="0.92843258380889893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleSize">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCircleMaskLayer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-55-gGD" customClass="CircleButton" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="100" y="175" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.11604558676481247" green="0.092310316860675812" blue="0.84861284494400024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dqb-iH-MhJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="xFf-Q0-Gd9"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.040780618786811829" blue="0.62754231691360474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Title" image="pin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textAlign" value="left"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCircleMaskLayer" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.69035106897354126" green="0.97037869691848755" blue="0.2977626621723175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="XbJ-OP-uF5" customClass="RoundedRectImageView" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="410" y="53" width="80" height="60"/>
+                                <color key="backgroundColor" red="0.010554053819999999" green="0.70540529490000003" blue="0.92843258380000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="roundedRectSize">
+                                        <size key="value" width="80" height="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasRoundedRectMaskLayer" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-un-xh7" customClass="RoundedRectButton" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="380" y="203" width="140" height="60"/>
+                                <color key="backgroundColor" red="0.094124294817447662" green="0.077096991240978241" blue="0.8718225359916687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.89885461330000005" green="0.063022680580000004" blue="0.050077058369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="My Title" image="pin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="roundedRectSize">
+                                        <size key="value" width="140" height="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.65490196079999996" green="0.96470588239999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasRoundedRectMaskLayer" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2s-3B-3ii" customClass="RoundedRectView" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="400" y="333" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Xsg-aO-At9"/>
+                                    <constraint firstAttribute="height" constant="100" id="ycB-bL-FVf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89885461330000005" green="0.063022680580000004" blue="0.050077058369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasRoundedRectMaskLayer" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="roundedRectSize">
+                                        <size key="value" width="50" height="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWt-o0-eaI" customClass="CircleView" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="100" y="325" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bac-UI-YBB"/>
+                                    <constraint firstAttribute="height" constant="100" id="d0y-dJ-BEh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleSize">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCircleMaskLayer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fW-r6-0wR" customClass="CircleLabel" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="110" y="484.5" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89885461330000005" green="0.063022680580000004" blue="0.050077058369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleSize">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCircleMaskLayer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-i9-kaE" customClass="RoundedRectLabel" customModule="TestButtonsAndImages" customModuleProvider="target">
+                                <rect key="frame" x="350" y="503.5" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89885461330000005" green="0.050077058369999997" blue="0.61024633859999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="roundedRectSize">
+                                        <size key="value" width="200" height="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasRoundedRectMaskLayer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xWt-o0-eaI" firstAttribute="centerX" secondItem="4fW-r6-0wR" secondAttribute="centerX" id="3DS-Yd-VZd"/>
+                            <constraint firstItem="K2s-3B-3ii" firstAttribute="centerY" secondItem="xWt-o0-eaI" secondAttribute="centerY" constant="8" id="9wG-pU-vdQ"/>
+                            <constraint firstItem="fNn-55-gGD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="24/32" id="I8W-z9-JKz"/>
+                            <constraint firstItem="4fW-r6-0wR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="56/32" id="InC-cD-6t3"/>
+                            <constraint firstItem="K2s-3B-3ii" firstAttribute="centerX" secondItem="XBQ-un-xh7" secondAttribute="centerX" id="Q3b-Uh-raG"/>
+                            <constraint firstItem="xWt-o0-eaI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="QIc-B5-8a1"/>
+                            <constraint firstItem="XBQ-un-xh7" firstAttribute="centerY" secondItem="fNn-55-gGD" secondAttribute="centerY" constant="8" id="TT5-LT-G8x"/>
+                            <constraint firstItem="4fW-r6-0wR" firstAttribute="centerY" secondItem="GxU-i9-kaE" secondAttribute="centerY" constant="1" id="UBR-s9-OWa"/>
+                            <constraint firstItem="fNn-55-gGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="aeb-jx-BCt"/>
+                            <constraint firstItem="XBQ-un-xh7" firstAttribute="centerX" secondItem="XbJ-OP-uF5" secondAttribute="centerX" id="bLZ-Pd-l84"/>
+                            <constraint firstItem="BKo-De-gUk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="8/32" id="hTS-O9-Qk0"/>
+                            <constraint firstItem="BKo-De-gUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="jBi-2n-uzW"/>
+                            <constraint firstItem="xWt-o0-eaI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="40/32" id="lgt-RD-0DB"/>
+                            <constraint firstItem="K2s-3B-3ii" firstAttribute="centerX" secondItem="GxU-i9-kaE" secondAttribute="centerX" id="lhe-Od-ws5"/>
+                            <constraint firstItem="XbJ-OP-uF5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="mWO-29-rex"/>
+                            <constraint firstItem="XbJ-OP-uF5" firstAttribute="centerY" secondItem="BKo-De-gUk" secondAttribute="centerY" constant="8" id="xoN-SA-V7d"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pin" width="24" height="31"/>
+    </resources>
+</document>
